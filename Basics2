@@ -1,1 +1,49 @@
+SELECT DISTINCT (col_name)
+
+SELECT COUNT (col_name) AS colnameCount
+SELECT AVG (col_name)
+
+If in a different database,
+  SELECT *
+  FROM db_name.dbo.table_name (table should belong to aforementioned db)
+  eg
+  SELECT *
+  FROM SQLTutorial.dbo.EmployeeSalary
+
+WHERE
+<> means not equal to
+WHERE (condition1) AND (/OR) (condition2) nis usable
+
+LIKE
+WHERE col_name LIKE '%S' - end with S
+WHERE col_name LIKE 'S%S' - start and end with S
+WHERE col_name LIKE '%S%' - contains S
+WHERE col_name LIKE 'S%' - starts with S
+
+IN 
+WHERE col_name IN ('Jim', 'Michael' ,.....  ) multiple values
+it is a condensed way of (Where =) MultiQuery
+
+GROUP BY
+SELECT Gender,Age , COUNT(Gender)
+FROM EmployeeDemographics (can add a WHERE clause as well after FROM)
+GROUP BY Gender, Age
+
+OUTPUT 
+minimised groups of contents according to conditions
+
+ORDER BY
+
+SELECT Gender, COUNT(Gender) AS CountGender
+FROM EmployeeDemographics
+WHERE Age > 31
+GROUP BY Gender
+ORDER BY Gender (ASC/DESC)
+
+
+
+
+
+
+
 
